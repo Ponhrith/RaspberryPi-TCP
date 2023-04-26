@@ -24,6 +24,8 @@ GPIO.setup(Sensor,GPIO.IN)
 print("Starting the client at: ", datetime.now())
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(addr)
+print("Client connected to the server at: ", datetime.now())
+
 
 def command():
     for i in range(0, 5):
@@ -63,5 +65,6 @@ msg = client.recv(max_size).decode(FORMAT)
 print(f"Server: {msg}")
 
 client.close()
+
 
 

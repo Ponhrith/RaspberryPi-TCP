@@ -1,4 +1,4 @@
-
-Water Not Detected 22:38:36
-Water Not Detected 22:39:15
-Water Not Detected 22:39:54
+Temp=35.0*C Humidity=64.0%
+Water Not Detected 23:12:35Temp=35.0*C Humidity=63.0%
+Water Not Detected 23:12:36Temp=34.0*C Humidity=64.0%
+Water Not Detected 23:12:38

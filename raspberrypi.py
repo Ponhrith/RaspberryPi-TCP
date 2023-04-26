@@ -11,10 +11,10 @@ addr = (HOST, PORT)
 max_size = 1024
 FORMAT = "utf-8"
 
-RelayPin = 11
-Sensor = 7
+RelayPin = 27
+Sensor = 4
 DHTsensor = Adafruit_DHT.DHT11
-pin = 8
+pin = 17
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -34,7 +34,10 @@ def command():
         time.sleep(1)
         humidity, temperature = Adafruit_DHT.read_retry(DHTsensor, pin)
         if humidity is not None and temperature is not None:
-            print('Temp={0:0.1f}*C Humidity={1:0.1f}%'.format(temperature, humidity))
+            humidityDetect = 'Temp={0:0.1f}*C Humidity={1:0.1f}%'.format(temperature, humidity)
+            print(humidityDetect)
+            with open("/home/pi/Documents/Report.txt", "a") as f:
+                f.write(humidityDetect)
         else:
             print('Failed to retrieve data from sensor')
         if GPIO.input(Sensor) == 1:

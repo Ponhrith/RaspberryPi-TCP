@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: white
   }
   
@@ -9,4 +9,115 @@ body {
   pre {
     background-color: yellow;
   }
-  
+   */
+
+/* CSS for Navbar */
+nav {
+  background-color: #0074D9;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CSS for Main Page */
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #F5B041;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 16px;
+}
+
+/* CSS for About Page */
+.about {
+  background-image: url('https://images.unsplash.com/photo-1562184459-7a9361630f03');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about h2 {
+  font-size: 48px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.about p {
+  max-width: 600px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.components {
+  background-color: white;
+  padding: 50px;
+}
+
+.components h2 {
+  color: #F5B041;
+}
+
+.components img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.components p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.stakeholders {
+  background-color: #F5B041;
+  color: white;
+  padding: 50px;
+}
+
+.stakeholders h2 {
+  color: white;
+}
+
+.stakeholders img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.stakeholders p {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 40px;
+}

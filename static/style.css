@@ -1,123 +1,332 @@
-/* body {
-    background-color: white
-  }
-  
-  h1 {
-    color: blue;
-  }
-  
-  pre {
-    background-color: yellow;
-  }
-   */
+/* Reset styles for better cross-browser compatibility */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* CSS for Navbar */
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles */
 nav {
-  background-color: #0074D9;
-  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-}
-
-nav img {
-  height: 50px;
-}
-
-nav a {
+  background-color: rgb(2, 7, 102);
   color: white;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 10px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-nav a:hover {
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 50px;
+}
+
+.logo h4 {
+  margin-left: 500px;
+  font-size: 1.2rem;
+  text-align: cemter;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Summary section styles */
+#summary {
+  margin-top: 100px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.summary-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+.summary-container h1{
+  text-align: center;
   text-decoration: underline;
 }
 
-/* CSS for Main Page */
-body {
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.summary-content {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
 }
 
-.container {
+/* Components section styles */
+#components {
+  background-color: #ddd;
+  padding: 50px;
+}
+
+.component-container {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: auto;
 }
 
-h1 {
-  color: #F5B041;
+.component-container h1 {
+  text-align: center;
+  text-decoration: underline;
+  
 }
 
-pre {
-  white-space: pre-wrap;
-  font-size: 16px;
-}
 
-/* CSS for About Page */
-.about {
-  background-image: url('https://images.unsplash.com/photo-1562184459-7a9361630f03');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
+.component-content {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  color: white;
 }
 
-.about h2 {
-  font-size: 48px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-.about p {
-  max-width: 600px;
-  font-size: 24px;
+.component-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
   text-align: center;
 }
 
-.components {
-  background-color: white;
+
+.component-item img {
+  max-width: 100%;
+}
+
+.component-item p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Stakeholders section styles */
+#stakeholders {
+  background-color: #f2f2f2;
   padding: 50px;
 }
 
-.components h2 {
-  color: #F5B041;
+.content {
+  max-width: 800px;
+  margin: auto;
 }
 
-.components img {
+.content h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.stakeholder-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stakeholder {
   width: 200px;
-  margin-bottom: 20px;
-}
-
-.components p {
-  font-size: 18px;
+  margin: 20px;
   text-align: center;
 }
 
-.stakeholders {
-  background-color: #F5B041;
-  color: white;
-  padding: 50px;
+.stakeholder-img {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.stakeholders h2 {
-  color: white;
+.stakeholder-img img {
+  max-width: 100%;
 }
 
-.stakeholders img {
-  width: 300px;
-  margin-bottom: 20px;
+.stakeholder-desc {
+  margin-top: 10px;
 }
 
-.stakeholders p {
-  font-size: 18px;
-  text-align: justify;
-  margin-bottom: 40px;
+.stakeholder-desc-1 h3 {
+  font-size: 1.2rem;
+  margin-top: 50px;
 }
+.stakeholder-desc-2 h3 {
+  font-size: 1.2rem;
+ 
+}
+
+.stakeholder-desc-3 h3 {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+.stakeholder-desc-1 p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.stakeholder-desc-2 p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.stakeholder-desc-3 p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+
+
+/* Styles for screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+  /* Navigation menu styles */
+  .nav-links {
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-active .nav-links {
+    transform: translateX(0%);
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Styles for the logo */
+  .logo {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .logo h4 {
+    font-size: 20px;
+  }
+
+  /* Styles for the burger menu icon */
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .nav-active .line2 {
+    opacity: 0;
+  }
+
+  .nav-active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Styles for the content sections */
+  section {
+    padding: 50px 20px;
+  }
+
+  .summary-content p {
+    font-size: 18px;
+  }
+
+  .component-item {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .component-item img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .component-item p {
+    font-size: 18px;
+  }
+
+  .stakeholder {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stakeholder-img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .stakeholder-img img {
+    width: 100%;
+  }
+
+  .stakeholder-desc {
+    text-align: center;
+  }
+
+  .stakeholder-desc h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .stakeholder-desc p {
+    font-size: 18px;
+  }
+}
+
+     

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About The Project</title>
     <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='image/e2stem.png') }}" />
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="../image/e2stem.png" alt="Logo">
+            <img src="{{ url_for('static', filename='image/e2stem.png') }}" alt="Logo">
             <h4>The Raspberry Pi Project</h4>
         </div>
         <ul class="nav-links">
@@ -30,9 +31,9 @@
         <div class="summary-container">
             <h1>Summary</h1>
             <div class="summary-content">
-                <p>The Raspberry Pi Project is a project aimed at creating a low-cost, credit-card sized computer that can be used to promote the teaching of basic computer science in schools and developing countries.</p>
-                <p>The project was initiated in 2006 by Eben Upton, Rob Mullins, Jack Lang, and Alan Mycroft, who were all members of the University of Cambridge's Computer Laboratory.</p>
-                <p>The Raspberry Pi Foundation, a UK-based charity, was established in 2008 to promote the study of computer science and related topics, especially at the school level.</p>
+                <p>This project was a challenge raised by teacher Solyka to solve manual watering problem in the school plant's net house. With this opportunity to apply what we have learnt in our Network Programming class, our mentor, 
+                    teacher Yuki guided us to work on the project.The project uses Python as the programming language and TCP/IP as a protocol. For the software part, the program is divided into two parts, client and server. Our laptop acts as a server, waiting a connection from RaspberryPi which acts as a client that reads data from the sensors, write the data into a text file and send it to the server.</p>
+                
             </div>
         </div>
     </section>
@@ -42,19 +43,19 @@
             <h1>Components</h1>
             <div class="component-content">
                 <div class="component-item">
-                    <img src="../image/raspberrypi.jpg" alt="Component 1">
+                    <img src="{{ url_for('static', filename='image/raspberrypi.jpg') }}" alt="Component 1">
                     <p>RaspberryPi Zero W</p>
                 </div>
                 <div class="component-item">
-                    <img src="../image/humidity.jpg" alt="Component 2">
+                    <img src="{{ url_for('static', filename='image/humidity.jpg') }}" alt="Component 2">
                     <p>DHT11 Humidity Sensor</p>
                 </div>
                 <div class="component-item">
-                    <img src="../image/pump.png" alt="Component 3">
+                    <img src="{{ url_for('static', filename='image/pump.png') }}" alt="Component 3">
                     <p>DC Water Pump Motor</p>
                 </div>
                 <div class="component-item">
-                    <img src="../image/soil.png" alt="Component 4">
+                    <img src="{{ url_for('static', filename='image/soil.png') }}" alt="Component 4">
                     <p>Soil Moisture Sensor</p>
                 </div>
             </div>
@@ -67,27 +68,27 @@
             <div class="stakeholder-list">
                 <div class="stakeholder">
                     <div class="stakeholder-img">
-                        <img src="../image/tsolyka.jpg" alt="Stakeholder 1">
+                        <img src="{{ url_for('static', filename='image/tsolyka.jpg') }}" alt="Stakeholder 1">
                     </div>
-                    <div class="stakeholder-desc">
+                    <div class="stakeholder-desc-1">
                         <h3>Ms.Chansolyka Tep</h3>
                         <p>Client</p>
                     </div>
                 </div>
                 <div class="stakeholder">
-                    <div class="stakeholder-desc">
+                    <div class="stakeholder-desc-2">
                         <h3>Mr.Yuki Sato</h3>
                         <p>Mentor</p>
                     </div>
                     <div class="stakeholder-img">
-                        <img src="" alt="Stakeholder 2">
+                        <img src="{{ url_for('static', filename='image/tyuki.jpg') }}" alt="Stakeholder 2">
                     </div>
                 </div>
                 <div class="stakeholder">
                     <div class="stakeholder-img">
-                        <img src="../image/ponhrith.jpg" alt="Stakeholder 3">
+                        <img src="{{ url_for('static', filename='image/ponhrith.jpg') }}" alt="Stakeholder 3">
                     </div>
-                    <div class="stakeholder-desc">
+                    <div class="stakeholder-desc-3">
                         <h3>Mr.Ponhrith Nhep</h3>
                         <p>E2STEM Higher Diploma in Software Development Student</p>
                     </div>
@@ -95,6 +96,9 @@
             </div>
         </div>
     </section>
+    <!-- <footer>
+        <p>&copy; All rights reserved 2023</p>
+    </footer> -->
 
 </body>
 </html>

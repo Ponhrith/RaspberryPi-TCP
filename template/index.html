@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raspberry Pi Data Report</title>
     <link rel="stylesheet" href="../static/index.css" />
-    <link rel="icon" type="image/png" href="../image/e2stem.png" />
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='image/e2stem.png') }}" />
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="../image/e2stem.png" alt="">
+            <img src="{{ url_for('static', filename='image/e2stem.png') }}" alt="">
+
             <h4>HDSD Automatic Watering System Project </h4>
         </div>
         <ul class="nav-links">
@@ -20,11 +21,11 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>Data Report</h1>
+        <h1>Data Report from RaspberryPi</h1>
         <pre>{{ data }}</pre>
     </div>
     <footer>
-        <p>All rights reserved 2023</p>
+        <p>&copy; All rights reserved 2023</p>
     </footer>
 </body>
 </html>
